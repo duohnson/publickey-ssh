@@ -16,8 +16,8 @@ pip install python-dotenv
 Configura tu archivo .env con las siguientes variables:
 
 ```
-user=tu_usuario
-ip=ip_del_servidor
+USER = tu_usuario
+HOST = ip_del_servidor
 ```
 
 Luego, ejecuta el script, para esto yo suelo utilizar un .BAT que genero, y este me abre un PowerShell:
