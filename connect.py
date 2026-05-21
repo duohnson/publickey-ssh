@@ -1,8 +1,13 @@
 from dotenv import load_dotenv
 import os
 
+import subprocess # Para ejecutar el comando como si se escribiera
+
 load_dotenv()
 
-test = os.getenv("prueba")
+def ssh_conexion():
+    
+    USER = os.getenv("USER")
+    HOST = os.getenv("HOST")
 
-print(test)
+    subprocess.run(["ssh", f"{USER}@{HOST}"])

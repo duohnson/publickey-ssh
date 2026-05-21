@@ -7,4 +7,5 @@ venv
 /venv/
 /.venv/
 
-
+__pycache__
+_pycache_
