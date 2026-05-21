@@ -1,0 +1,10 @@
+
+.env
+.env.bkp
+
+venv
+.venv
+/venv/
+/.venv/
+
+
