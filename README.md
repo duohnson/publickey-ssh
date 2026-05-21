@@ -1,4 +1,4 @@
-# PublicKey SSH
+# SSH Automation Script (.BAT) for Windows
 
 ## Descripción
 
