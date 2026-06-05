@@ -1,11 +1,11 @@
 from dotenv import load_dotenv
 import os
 
-import subprocess # Para ejecutar el comando como si se escribiera
+import subprocess # To execute the command as if it were written
 
 load_dotenv()
 
-def ssh_conexion():
+def ssh_connect():
     
     USER = os.getenv("USER")
     HOST = os.getenv("HOST")

@@ -1,19 +1,19 @@
 import connect as cnt
 
 def menu():
-    print(" === | Bienvenido | === ")
-    print("1. Conectar")
-    print("2. Salir")
+    print(" === | Welcome | === ")
+    print("1. Connect")
+    print("2. Exit")
 
-    opcion = int(input("Seleccione:"))
+    opcion = int(input("Select:"))
     
     match opcion:
         case 1:
-            print("Conectando a servidor...")
-            print(cnt.ssh_conexion())
+            print("Connecting to server...")
+            print(cnt.ssh_connect())
 
         case 2:
-            print("Saliendo.")
+            print("Exiting.")
 
     return opcion
 

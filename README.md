@@ -1,37 +1,37 @@
 # SSH Automation Script (.BAT) for Windows
 
-## Descripción
+## Description
 
-Pequeño script basico que permite conectar a un servidor utilizando autenticación por clave pública SSH. Este script es útil para automatizar tareas de conexión a servidores remotos sin necesidad de ingresar la contraseña cada vez.
+Small basic script that allows connecting to a server using SSH public key authentication. This script is useful for automating connection tasks to remote servers without needing to enter the password every time.
 
-De momento como solo cuento con un servidor, esta orientado a una sola conexión, pero se pueden agregar más servidores y opciones de conexión en el futuro.
+Currently, since I only have one server, it is oriented to a single connection, but more servers and connection options can be added in the future.
 
-## Requisitos
+## Requirements
 
 python3
 pip install python-dotenv
 
-## Uso
+## Usage
 
-Configura tu archivo .env con las siguientes variables:
+Configure your .env file with the following variables:
 
 ```
-USER = tu_usuario
-HOST = ip_del_servidor
+USER = your_user
+HOST = server_ip
 ```
 
-Luego, ejecuta el script, para esto yo suelo utilizar un .BAT que genero, y este me abre un PowerShell:
+Then, execute the script. For this, I usually use a .BAT that I generate, and it opens a PowerShell for me:
 
 ```
 @echo off
 start powershell -Command "python main.py"
 ```
 
-Nota: También funciona sin el publickey, te tira para escribir la contraseña, pero el objetivo es usar la autenticación por clave pública.
+Note: It also works without the public key, it prompts you to enter the password, but the goal is to use public key authentication.
 
-¿Porqué usar autenticación por clave pública SSH?
+Why use SSH public key authentication?
 
-Mejor seguridad: Las claves públicas SSH son más seguras que las contraseñas, ya que no pueden ser adivinadas o descifradas fácilmente.
-Comodidad: No necesitas ingresar tu contraseña cada vez que te conectas a un servidor, lo que ahorra tiempo y esfuerzo, solo es un CLICK, y listo, estas conectado.
+Better security: SSH public keys are more secure than passwords, as they cannot be easily guessed or decrypted.
+Convenience: You don't need to enter your password every time you connect to a server, which saves time and effort, it's just a CLICK, and you're connected.
 
-Licencia MIT | Creado por Daniel Uohnson
+MIT License | Created by Daniel Uohnson
